@@ -3,12 +3,12 @@
 .header {
   &.container {
     @include center;
+    background-color: #262632;
   }
 
   &.title {
     font-weight: bold;
     color: $background;
-    background-color: #262632;
     text-align: center;
   }
 }
