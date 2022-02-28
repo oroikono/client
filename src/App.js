@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <Header height="100"/>
-        <p>Let's create an aesthetic app</p>
+        <h1> <p align={center}> text-align: center; Let's create an aesthetic app </p>  </h1>
       <AppRouter/>
     </div>
   );
