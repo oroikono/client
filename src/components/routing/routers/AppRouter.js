@@ -20,9 +20,6 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/home">
-          <Home/>
-        </Route>
         <Route path="/game">
           <GameGuard>
             <GameRouter base="/game"/>
