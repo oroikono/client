@@ -10,6 +10,7 @@ const App = () => {
   return (
     <div>
       <Header height="100"/>
+        <title>Your new title here</title>
       <AppRouter/>
     </div>
   );
