@@ -1,4 +1,4 @@
-@import 'styles/theme';
+@import "src/styles/_theme.scss";
 
 .header {
   &.container {
@@ -7,7 +7,8 @@
 
   &.title {
     font-weight: bold;
-    color: black;
+    color: $accentDark;
     text-align: center;
+    text: "Let's create an aesthetic app";
   }
 }

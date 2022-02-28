@@ -1,4 +1,4 @@
-@import 'styles/theme';
+@import "src/styles/_theme.scss";
 
 .login {
   &.container {
@@ -20,7 +20,7 @@
     padding-left: 37px;
     padding-right: 37px;
     border-radius: 0.75em;
-    background-color: darkgrey;
+    background-color: $accentDark;
     transition: opacity 0.5s ease, transform 0.5s ease;
     box-shadow: $dropShadow;
   }
