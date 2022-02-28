@@ -10,6 +10,7 @@ const App = () => {
   return (
     <div>
       <Header height="100"/>
+        <p>Let's create an aesthetic app</p>
       <AppRouter/>
     </div>
   );
