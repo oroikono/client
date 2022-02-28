@@ -1,4 +1,4 @@
-@import "src/styles/theme";
+@import 'styles/theme';
 
 .primary-button {
   &:hover {
@@ -21,7 +21,7 @@
   border-radius: $borderRadius;
   cursor: pointer;
   opacity: 1;
-  color: $textColor;
+  color: $background;
   background-color: $accent;
   transition: all 0.3s ease;
 }

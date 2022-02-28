@@ -1,4 +1,4 @@
-@import "src/styles/theme";
+@import 'styles/theme';
 
 .header {
   &.container {
@@ -7,7 +7,7 @@
 
   &.title {
     font-weight: bold;
-    color: $accentDark;
+    color: $background;
     text-align: center;
   }
 }

@@ -1,4 +1,4 @@
-@import "src/styles/theme";
+@import 'styles/theme';
 
 /* The '&' is a shorthand for the containing element,
   so for example a '&.user-list' inside .game will compile to
@@ -40,7 +40,7 @@
     border-radius: $borderRadius;
     display: flex;
     align-items: center;
-    background: lighten($accent, 5);
+    background: lighten($background, 5);
   }
   &.name {
     font-weight: 300;
@@ -48,7 +48,7 @@
   }
   &.username {
     font-weight: 500;
-    color: $textColor;
+    color: $accent;
   }
   &.id {
     margin-left: auto;

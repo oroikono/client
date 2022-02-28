@@ -1,7 +1,7 @@
-@import "src/styles/theme";
+@import 'styles/theme';
 
 .react-logo {
-  fill: $textColor;
+  fill: $background;
   animation: spin 20s linear infinite;
 }
 
