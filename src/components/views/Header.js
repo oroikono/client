@@ -22,14 +22,10 @@ const Header = props => (
     <Navbar bg="dark" variant="dark">
         <Container>
             <Navbar.Brand href="#home">
-                <ReactLogo fill="white" width="42px" height="42px"/>
+                <Nav.Link href="/game"><ReactLogo fill="white" width="42px" height="42px"/></Nav.Link>
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
-                <Nav>
-                <Nav.Link href="/users">Users</Nav.Link>
-                <Nav.Link href="/profile">Profile</Nav.Link>
-                </Nav>
                 <Nav className="justify-content-end" style={{ width: "100%" }}>
                     <Nav.Link href="/login">Login</Nav.Link>
                     <Nav.Link href="/register">Register</Nav.Link>
