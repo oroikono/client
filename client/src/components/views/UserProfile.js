@@ -6,7 +6,7 @@ import {Button} from 'components/ui/Button';
 import 'styles/views/Login.scss';
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import ProfileDesign from "../ui/ProfileDesign";
+import ProfileDesign from "/Users/oroikon/client/src/components/ui/ProfileDesign.js"
 import { withRouter } from 'react-router-dom';
 
 /*
