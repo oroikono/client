@@ -152,7 +152,7 @@ const EditProfile = props => {
                         value={birthday}
                         onChange={un => setBirthday(un)}
                     />
-                    <div className="login button-container">
+                    <div className="save and back button-container">
                         <Button
                             width="100%"
                             onClick={() => doEdit()}

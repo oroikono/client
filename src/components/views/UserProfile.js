@@ -5,7 +5,6 @@ import {useHistory} from 'react-router-dom';
 import {Button} from 'components/ui/Button';
 import 'styles/views/Login.scss';
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import ProfileDesign from "../ui/ProfileDesign";
 import { withRouter } from 'react-router-dom';
 
@@ -18,10 +17,10 @@ specific components that belong to the main one in the same file.
 
 const Container = styled.div`
   margin-top: 2em;
+  height:500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 300px;
   justify-content: black;
 `;
 
@@ -49,40 +48,29 @@ const UserProfile = props => {
     };
     const Label = styled.label
         `height: 35px;
-padding-left: 15px;
-margin-left: -4px;
-border: none;
-border-radius: 20px;
-margin-bottom: 20px;
-color: white;
-font-size: 30px
-`;
+    padding-left: 15px;
+    margin-left: -4px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px
+    `;
     return (
         <Container>
             <div className="player container">
-
-                <top><Label>Profile</Label></top>
-                <div>
-                <p>
-                    {user? (<ProfileDesign user={user}/>): <h2>There is an error...</h2>}
-                </p>
+                <div className="label container">
+                <top><Label>Profile Details</Label></top>
+                    {user? (<ProfileDesign user={user}/>): <h2>No user is selected</h2>}
+                    <div className="save and back button-container">
+                        <Button width={"50%"}
+                             disabled={localStorage.getItem("selectedUser")!=localStorage.getItem("id")}
+                             onClick={() => {localStorage.setItem("selectedUser",id);
+                                 history.push("profile/edit");}}>Edit Profile</Button>
+                        <Button width={"50%"} onClick={() => doBack()}>Back</Button>
+                    </div>
+                </div>
             </div>
-            </div>
-            <Button
-                width={"16%"}
-                disabled={localStorage.getItem("selectedUser")!=localStorage.getItem("id")}
-                onClick={() => {
-                    localStorage.setItem("selectedUser",id);
-                    history.push("profile/edit");
-                }}>
-                Edit Profile
-            </Button>
-            <Button
-                width="16%"
-                onClick={() => doBack()}
-            >
-                Back
-            </Button>
         </Container>
     );
 };
