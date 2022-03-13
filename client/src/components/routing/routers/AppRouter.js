@@ -4,6 +4,7 @@ import GameRouter from "components/routing/routers/GameRouter";
 import {LoginGuard} from "components/routing/routeProtectors/LoginGuard";
 import Login from "components/views/Login";
 import Register from "components/views/Register";
+import UsersList from "../../views/UsersList";
 import UserProfile from "../../views/UserProfile";
 import EditProfile from "../../views/EditProfile";
 
@@ -32,6 +33,8 @@ const AppRouter = () => {
         </Route>
         <Route exact path="/register">
           <Register/>
+        </Route>
+        <Route exact path="/users" component={UsersList}>
         </Route>
         <Route exact path="/profile" component={UserProfile}>
         </Route>
